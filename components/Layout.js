@@ -2,7 +2,7 @@ import Navigation from "./Navigation";
 
 const Layout = props => (
     <>
-        <Navigation/>
+        {/*<Navigation/>*/}
         {props.children}
     </>
 );
