@@ -9,7 +9,7 @@
     "start": "next start"
   },
   "keywords": [],
-  "author": "",
+  "author": "Zachary Meyer",
   "license": "ISC",
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
