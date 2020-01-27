@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../public/main.css';
+import "../public/nav.css";
 import Clock from "../components/Clock";
 import Link from "next/link";
 import Head from 'next/head';
