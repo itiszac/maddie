@@ -15,7 +15,7 @@ const Index = () => (
                 <Clock/>
 
                 <div className="navigation-area">
-                    <Link href="/gallery" passHref>
+                    <Link href="/about">
                         <a className='gallery-btn'>gallery</a>
                     </Link>
                 </div>
