@@ -1,3 +1,5 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../public/main.css';
 import Layout from "../components/Layout";
 import Link from "next/link";
 

@@ -1,6 +1,5 @@
-import '../styles/main.css';
-
 class Countdown extends React.Component {
+    _isMounted = false;
 
     constructor(props) {
         super(props);
@@ -14,10 +13,15 @@ class Countdown extends React.Component {
 
     componentWillUnmount() {
         this.getTimeSince(this.props.dateTogether);
+        this._isMounted = false;
     }
 
     componentDidMount() {
-        setInterval(() => this.getTimeSince(this.props.dateTogether), 1000);
+        this._isMounted = true;
+        setInterval(() => {
+            if (this._isMounted)
+                this.getTimeSince(this.props.dateTogether)
+        }, 1000);
     }
 
     leading0(num) {
