@@ -1,7 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../public/main.css';
-import "../public/nav.css";
-
 import { useState, useCallback, useEffect } from "react";
 import {photos} from "../photos";
 import Navigation from "../components/Navigation";
