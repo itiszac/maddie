@@ -1,7 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../public/main.css';
+import "../public/nav.css";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import {photos} from "../photos";
 import Navigation from "../components/Navigation";
 import Gallery from "react-photo-gallery";
@@ -10,6 +11,11 @@ import Carousel, { Modal, ModalGateway } from "react-images";
 const GalleryPage = () => {
     const [currentImage, setCurrentImage] = useState(0);
     const [viewerIsOpen, setViewerIsOpen] = useState(false);
+    const [showGallery, setShowGallery] = useState(false);
+
+    useEffect(() => {
+        setShowGallery(true);
+    }, []);
 
     const openLightbox = useCallback((event, { photo, index }) => {
         setCurrentImage(index);
@@ -27,7 +33,7 @@ const GalleryPage = () => {
                 <Navigation/>
             </div>
             <div className="container">
-                <Gallery photos={photos} onClick={openLightbox} />
+                {showGallery ? <Gallery photos={photos} onClick={openLightbox} /> : null}
                 <ModalGateway>
                     {viewerIsOpen ? (
                         <Modal onClose={closeLightbox}>
