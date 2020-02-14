@@ -3,6 +3,7 @@ import {photos} from "../photos";
 import Navigation from "../components/Navigation";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
+import Head from "next/dist/next-server/lib/head";
 
 const GalleryPage = () => {
     const [currentImage, setCurrentImage] = useState(0);
@@ -25,6 +26,9 @@ const GalleryPage = () => {
 
     return (
         <>
+            <Head>
+                <title>Gallery</title>
+            </Head>
             <div style={{background: 'linear-gradient(-9deg, #861657 0%, #861657 40%, #ffa69e 100%)'}}>
                 <Navigation/>
             </div>
