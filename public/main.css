@@ -224,8 +224,8 @@ b.light-color {
 .main-area .navigation-area {
     margin: 40px auto;
     position: relative;
-    width: 450px;
-    height: 53px;
+    /*width: 450px;*/
+    /*height: 53px;*/
 }
 
 .main-area .navigation-area .gallery-btn {
@@ -424,7 +424,6 @@ b.light-color {
         line-height: 45px;
         font-size: 1.5em;
     }
-
 }
 
 @media all and (max-width: 30em) {

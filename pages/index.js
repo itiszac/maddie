@@ -13,7 +13,6 @@ const Index = () => (
         <div className="main-area center-text">
             <div className="display-table">
                 <div className="display-table-cell">
-
                     <h1 className="title"><b>&#8734;</b></h1>
                     <p className="desc font-white">"Being deeply loved by someone gives you strength, while loving
                         someone
