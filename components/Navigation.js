@@ -1,4 +1,3 @@
-import "../public/nav.css";
 import Link from "next/link";
 
 const Navigation = () => (
